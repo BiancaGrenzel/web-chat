@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+<h1 align="center">Web-Chat</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<br/>
 
-## Available Scripts
+<div align="center"> 
+  <img src="https://focanocliente.com.br/wp-content/uploads/2020/03/chat-bot.png" alt="chat" width="100%" />
+</div>
 
-In the project directory, you can run:
+<br/>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+<br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Introdução
 
-### `npm run build`
+O Web-Chat é um projeto com o intuito de criar um chat de ajuda, que contém uma experiência dinâmica e salva as informações preenchidas pelo usuário usando um formulário.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br/>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Acesso ao projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Você pode baixar o projeto, via github, ou acessa-lo pelo a seguir link para testá-lo.
+https://linkaqui.com
 
-### `npm run eject`
+<br/>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 📼 Instalação
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `Instalação de dependências`: Para instalar as dependências, use o comando a seguir:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm install
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+ou, se preferir use o yarn:
 
-## Learn More
+```bash
+yarn
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `Inicialização do projeto`: Para iniciar o projeto, use o comando a seguir:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run init
+```
+
+ou, se preferir use o yarn:
+
+```bash
+yarn init
+```
+
+<br/>
+
+## 🔨 Requisitos do projeto
+
+- `Requisito 1` `Experiência dinâmica`: Apresentar uma experiência dinâmica, onde o usuário preenche um campo por vez, e ao preencher o primeiro campo, mostra o segundo, e assim por diante.
+- `Requisito 2` `Máscara para validação de data e e-mails válidos`: O sistema precisa ter uma máscara de validação de valores de todos os inputs necessários.
+- `Requisito 3` `Estado diferente quando estiver com dados incorretos`: Deve-se ter um estado diferente no componente de input, ao usuário digitar um valor inválido e clicar em salvar.
+- `Requisito 4` `Autocomplete para as cidades`: Ter um autocomplete no campo de "Cidade", mostrando todas as cidades disponíveis para seleção.
+- `Requisito 5` `Testes unitários`: Escrita de testes em componentes possíveis com JEST, react-test-library e storybook.
+- `Requisito 6` `Simulação de API`: Enviar os dados escritos para a URL 'https://mockapi.io'para simular uma conexão.
+- `Requisito 7` `Responsividade`: A aplicação deve se comportar em todos os tipos de tela.
+
+<br/>
+
+## ✔️ Técnicas e tecnologias utilizadas
+
+- `Typescript`
+- `React`
+- `Jest`
+- `Formik`
+- `Yup`
+- `Axios`
+- `React-Test-Library`
+- `Styled-Components`
+- `Font-Awesome`
