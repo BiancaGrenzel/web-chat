@@ -1,20 +1,37 @@
 import { ErrorMessage, useField } from "formik";
+import { Container } from "../ChatForm/style";
+import { ErrorMessageStyled, InputMaskStyled } from "./style";
 import { Props } from "./types";
 
-export const TextField = ({ label, ...props }: Props) => {
-  console.log(props);
+export const TextField = ({
+  label,
+  minLength,
+  disabled,
+  mask,
+  ...props
+}: Props) => {
   const [field, meta] = useField(props);
+
   return (
-    <div className="mb-2" data-testId="container-textfield">
+    <Container
+      display="flex"
+      flexDirection="column"
+      backgroundColor="transparent"
+      width="100%"
+    >
       <label htmlFor={field.name}>{label}</label>
-      <input
+      <InputMaskStyled
+        mask={mask ? mask : ""}
         className={`form-control shadow-none ${
           meta.touched && meta.error && "is-invalid"
         }`}
+        isOnError={meta.error !== undefined ? true : false}
         {...field}
+        minLength={minLength}
         autoComplete="off"
+        disabled={disabled}
       />
-      <ErrorMessage component="div" name={field.name} className="error" />
-    </div>
+      <ErrorMessageStyled component="div" name={field.name} className="error" />
+    </Container>
   );
 };
