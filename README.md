@@ -25,7 +25,7 @@ O Web-Chat é um projeto com o intuito de criar um chat de ajuda, que contém um
 ## 📁 Acesso ao projeto
 
 Você pode baixar o projeto, via github, ou acessa-lo pelo a seguir link para testá-lo.
-https://linkaqui.com
+https://app.netlify.com/sites/elegant-monstera-1527bc/deploys/631f6e6979a001000867e041
 
 <br/>
 
