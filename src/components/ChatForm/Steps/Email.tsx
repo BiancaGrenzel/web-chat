@@ -9,7 +9,7 @@ const Email = () => {
   const { formAnswers, setFormAnswers } = useDataContext();
 
   const validate = Yup.object({
-    email: Yup.string().email("Email is invalid").required("Email is required"),
+    email: Yup.string().email("Email inválido").required("Email é obrigatório"),
   });
 
   return (

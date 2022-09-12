@@ -22,9 +22,9 @@ const BirthDate = () => {
 
   const validate = Yup.object({
     birthDate: Yup.date()
-      .required("Campo obrigatório.")
+      .required("Campo obrigatório")
       .nullable()
-      .typeError('Campo deve ser uma data válida.'),
+      .typeError('Campo deve ser uma data válida'),
   });
 
   return (

@@ -11,8 +11,8 @@ const ZipCode = () => {
   const validate = Yup.object({
     zip: Yup.string()
       .transform((value) => value.replace(/[^\d]/g, ""))
-      .min(8, "Must be 8 characters")
-      .max(8, "Must be 8 characters")
+      .min(8, "Deve conter 8 caracteres")
+      .max(8, "Deve conter 8 caracteres")
       .required("Required"),
   });
 

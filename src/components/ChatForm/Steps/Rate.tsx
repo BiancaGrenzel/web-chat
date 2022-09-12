@@ -11,14 +11,10 @@ const Rate = () => {
   const validate = Yup.object({
     rate: Yup.string()
       .matches(/^[0-5]+$/, "Avaliação deve ser até 5")
-      .min(1, "Must be at least 1 character")
-      .typeError("Campo deve ser um valor válido.")
-      .required("Campo obrigatório."),
+      .min(1, "Deve conter 1 número")
+      .typeError("Campo deve ser um valor válido")
+      .required("Campo obrigatório"),
   });
-
-  const beforeMaskStateChange = (event: any) => {
-    event.target.value = event.target.value > "" ? 5 : event.target.value;
-  };
 
   return (
     <>
