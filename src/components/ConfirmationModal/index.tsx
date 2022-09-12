@@ -11,7 +11,6 @@ import { IoMdClose } from "react-icons/io";
 import { useEffect, useState } from "react";
 import { ConfirmProps } from "./types";
 import Button from "../Button";
-import { useDataContext } from "../../context";
 
 const ConfirmationModal = ({
   cancelText,
