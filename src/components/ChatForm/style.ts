@@ -14,8 +14,7 @@ export const Container = styled.div<Style>`
   margin: ${(props) => (props.margin ? props.margin : "0px")};
   flex-direction: ${(props) =>
     props.flexDirection ? props.flexDirection : "row"};
-  align-items: ${(props) =>
-    props.alignItems ? props.alignItems : "initial"};
+  align-items: ${(props) => (props.alignItems ? props.alignItems : "initial")};
   justify-content: ${(props) =>
     props.justifyContent ? props.justifyContent : "initial"};
   display: ${(props) => (props.display ? props.display : "flex")};
@@ -52,7 +51,7 @@ export const Button = styled.button`
   position: absolute;
   right: 0;
   margin-right: 48px;
-  margin-top: calc(16px + 26.5px );
+  margin-top: calc(16px + 26px);
   border: 0px;
   height: 42px;
   width: 40px;
@@ -71,6 +70,7 @@ export const Button = styled.button`
   }
   &:hover {
     background-color: #dce7ff;
+    cursor: pointer;
   }
   &:focus {
     outline: none;
