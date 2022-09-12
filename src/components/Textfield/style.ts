@@ -38,7 +38,6 @@ export const InputMaskStyled = styled(InputMask)<InputMaskProps>`
   &:disabled {
     background-color: transparent;
     color: ${theme.black.dark};
-    margin-left: -10px;
   }
   &:focus {
     outline: none;
