@@ -7,6 +7,8 @@ const Home = () => {
     <Container
       width="100vw"
       height="100vh"
+      padding="0px"
+      margin="0px"
       backgroundColor={theme.blue.light}
       justifyContent="center"
     >
