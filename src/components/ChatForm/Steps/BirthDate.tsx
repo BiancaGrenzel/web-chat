@@ -60,7 +60,7 @@ const BirthDate = () => {
                     <TextField
                       mask="99/99/99"
                       name="birthDate"
-                      label="Data de Nascimento"
+                      label="Data de Nascimento (mm/dd/yy)"
                       type="date"
                       disabled={formAnswers.birthDate !== "" ? true : false}
                     />
