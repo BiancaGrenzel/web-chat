@@ -49,12 +49,6 @@ yarn
 npm run init
 ```
 
-ou, se preferir use o yarn:
-
-```bash
-yarn init
-```
-
 <br/>
 
 ## 🔨 Requisitos do projeto
