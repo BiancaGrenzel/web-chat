@@ -52,9 +52,9 @@ export const Button = styled.button`
   position: absolute;
   right: 0;
   margin-right: 48px;
-  margin-top: calc(16px + 24px + 8px + 8px);
+  margin-top: calc(16px + 26.5px );
   border: 0px;
-  height: 40px;
+  height: 42px;
   width: 40px;
   display: flex;
   align-items: center;
